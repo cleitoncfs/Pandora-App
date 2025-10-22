@@ -95,9 +95,6 @@
             type="button"
             data-toggle="collapse"
             data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -120,32 +117,39 @@
           </div>
         </nav>
 
-        <!-- Título -->
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Um novo melhor amigo espera por você</h1>
-            <p class="lead">
-              Encontre o companheiro perfeito para compartilhar momentos
-              inesquecíveis
-            </p>
-            <button type="button" class="btn btn-dark btn-lg">
-              <i class="bi bi-apple"></i> Download
-            </button>
-            <button type="button" class="btn btn-outline-light btn-lg">
-              <i class="bi bi-google-play"></i> Download
-            </button>
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-content">
+                <h1>Um novo melhor amigo espera por você</h1>
+                <p class="lead">
+                  Encontre o companheiro perfeito para compartilhar momentos
+                  inesquecíveis
+                </p>
+                <div class="button-group">
+                  <button type="button" class="btn btn-dark btn-lg">
+                    <i class="bi bi-apple"></i> Download
+                  </button>
+                  <button type="button" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-google-play"></i> Download
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="image-container">
+                <img
+                  class="title-image"
+                  src="./img/cachorro-feliz.png"
+                  alt="Cachorro Feliz"
+                />
+              </div>
+            </div>
           </div>
-          <figure class="col-lg-6">
-            <img
-              class="title-image"
-              src="./img/cachorro-feliz2.png"
-              alt="Cachorro Feliz"
-            />
-          </figure>
         </div>
       </div>
     </header>
-
     <!-- Features -->
     <section id="features">
       <div class="container-fluid">
@@ -324,9 +328,8 @@
     </section>
 
     <!-- Footer -->
-    <!-- Footer -->
     <footer id="footer" class="text-center">
-      <p>© Copyright 2025 App Pandora</p>
+      <p>© Copyright <span id="current-year">2025</span> App Pandora</p>
       <p>Conectando famílias a seus novos melhores amigos</p>
       <p class="dev-credit">
         Desenvolvido por
@@ -338,7 +341,15 @@
         >
       </p>
     </footer>
-    <!-- Scripts -->
+
+    <!-- Script do Ano Atual -->
+    <script>
+      // Atualiza o ano automaticamente
+      document.getElementById('current-year').textContent =
+        new Date().getFullYear();
+    </script>
+
+    <!-- Scripts do Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
