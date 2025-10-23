@@ -470,6 +470,67 @@ p {
   color: #aaa;
 }
 
+/* Ícones sociais - Pandora App (mesmo estilo Dukeza) */
+.social-icons a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #6c757d; /* Cor apagada padrão */
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover i {
+  transform: translateY(-3px);
+}
+
+/* Cores específicas para cada rede social no hover */
+.social-icons a:hover .bi-facebook {
+  color: #1877f2;
+}
+
+.social-icons a:hover .bi-twitter-x {
+  color: #000000;
+}
+
+.social-icons a:hover .bi-instagram {
+  color: #e4405f;
+}
+
+.social-icons a:hover .bi-youtube {
+  color: #ff0000;
+}
+
+/* Mantém o fundo original do Pandora */
+#footer {
+  /* Remove qualquer gradiente ou cor de fundo especial */
+  padding: 2rem 0;
+}
+
+/* Links do desenvolvedor mantêm o estilo original */
+#footer .dev-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#footer .dev-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .social-icons {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .social-icons i {
+    font-size: 1.8rem;
+    margin: 0 8px;
+  }
+}
+
 /* Créditos do desenvolvedor */
 .dev-credit {
   font-size: 0.75rem;
